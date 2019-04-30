@@ -1,0 +1,42 @@
+html, body{
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+#log{
+	height:100%;
+	width:100%;
+	background-color:#FFF;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:100;
+}
+#back,.backimg{
+	vertical-align:middie;
+	cursor:pointer;
+}
+#nav{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	vertical-align:middie;
+}
+#nav>li{
+	border:1px solid gray;
+	display:inline-block;
+	margin:0px;
+	padding:0.125em 0.25em;
+	cursor:default;
+}
+.nav-select{
+	background-color:#9FF;
+	color:#000;
+}
+.nav-unselect{
+	color:gray;
+}

@@ -1,0 +1,12 @@
+{
+	"autoload": {
+		"psr-4": {
+			"ren1244\\": "ren1244/experimental",
+			"app\\":"app"
+		},
+		"files": [
+			"env.php",
+			"appInit.php"
+		]
+	}
+}

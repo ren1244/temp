@@ -1,0 +1,409 @@
+/*
+Copyright (c) 2017 Chris Patuzzo
+https://twitter.com/chrispatuzzo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+.github-markdown-dark {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #000;
+  padding: 30px;
+  color: #CCC;
+}
+
+.github-markdown-dark > *:first-child {
+  margin-top: 0 !important;
+}
+
+.github-markdown-dark > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+.github-markdown-dark a {
+  color: #BE7C3B;
+  text-decoration: none;
+}
+
+.github-markdown-dark a.absent {
+  color: #33FFFF;
+}
+
+.github-markdown-dark a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.github-markdown-dark h1, .github-markdown-dark h2, .github-markdown-dark h3, .github-markdown-dark h4, .github-markdown-dark h5, .github-markdown-dark h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative;
+}
+
+.github-markdown-dark h2:first-child, .github-markdown-dark h1:first-child, .github-markdown-dark h1:first-child + h2, .github-markdown-dark h3:first-child, .github-markdown-dark h4:first-child, .github-markdown-dark h5:first-child, .github-markdown-dark h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.github-markdown-dark h1:hover a.anchor, .github-markdown-dark h2:hover a.anchor, .github-markdown-dark h3:hover a.anchor, .github-markdown-dark h4:hover a.anchor, .github-markdown-dark h5:hover a.anchor, .github-markdown-dark h6:hover a.anchor {
+  text-decoration: none;
+}
+
+.github-markdown-dark h1 tt, .github-markdown-dark h1 code {
+  font-size: inherit;
+}
+
+h2 tt, h2 code {
+  font-size: inherit;
+}
+
+.github-markdown-dark h3 tt, .github-markdown-dark h3 code {
+  font-size: inherit;
+}
+
+.github-markdown-dark h4 tt, .github-markdown-dark h4 code {
+  font-size: inherit;
+}
+
+.github-markdown-dark h5 tt, .github-markdown-dark h5 code {
+  font-size: inherit;
+}
+
+.github-markdown-dark h6 tt, .github-markdown-dark h6 code {
+  font-size: inherit;
+}
+
+.github-markdown-dark h1 {
+  font-size: 28px;
+  color: #FFF;
+}
+
+.github-markdown-dark h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: #FFF;
+}
+
+.github-markdown-dark h3 {
+  font-size: 18px;
+}
+
+.github-markdown-dark h4 {
+  font-size: 16px;
+}
+
+.github-markdown-dark h5 {
+  font-size: 14px;
+}
+
+.github-markdown-dark h6 {
+  color: #888888;
+  font-size: 14px;
+}
+
+.github-markdown-dark p, .github-markdown-dark blockquote, .github-markdown-dark ul, .github-markdown-dark ol, .github-markdown-dark dl, .github-markdown-dark li, table, .github-markdown-dark pre {
+  margin: 15px 0;
+}
+
+.github-markdown-dark hr {
+  border: 0 none;
+  color: #333333;
+  height: 4px;
+  padding: 0;
+}
+
+.github-markdown-dark > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.github-markdown-dark > h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.github-markdown-dark > h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.github-markdown-dark > h3:first-child, .github-markdown-dark > h4:first-child, .github-markdown-dark > h5:first-child, .github-markdown-dark > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.github-markdown-dark a:first-child h1, .github-markdown-dark a:first-child h2, .github-markdown-dark a:first-child h3, .github-markdown-dark a:first-child h4, .github-markdown-dark a:first-child h5, .github-markdown-dark a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.github-markdown-dark h1 p, .github-markdown-dark h2 p, .github-markdown-dark h3 p, .github-markdown-dark h4 p, .github-markdown-dark h5 p, .github-markdown-dark h6 p {
+  margin-top: 0;
+}
+
+.github-markdown-dark li p.first {
+  display: inline-block;
+}
+
+.github-markdown-dark ul, .github-markdown-dark ol {
+  padding-left: 30px;
+}
+
+.github-markdown-dark ul :first-child, .github-markdown-dark ol :first-child {
+  margin-top: 0;
+}
+
+.github-markdown-dark ul :last-child, .github-markdown-dark ol :last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-dark dl {
+  padding: 0;
+}
+
+.github-markdown-dark dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+.github-markdown-dark dl dt:first-child {
+  padding: 0;
+}
+
+.github-markdown-dark dl dt > :first-child {
+  margin-top: 0;
+}
+
+.github-markdown-dark dl dt > :last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-dark dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+.github-markdown-dark dl dd > :first-child {
+  margin-top: 0;
+}
+
+.github-markdown-dark dl dd > :last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-dark blockquote {
+  border-left: 4px solid #222222;
+  padding: 0 15px;
+  color: #888888;
+}
+
+.github-markdown-dark blockquote > :first-child {
+  margin-top: 0;
+}
+
+.github-markdown-dark blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-dark table {
+  padding: 0;
+}
+.github-markdown-dark table tr {
+  border-top: 1px solid #333333;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.github-markdown-dark table tr:nth-child(2n) {
+  background-color: #070707;
+}
+
+.github-markdown-dark table tr th {
+  font-weight: bold;
+  border: 1px solid #333333;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+.github-markdown-dark table tr td {
+  border: 1px solid #333333;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+.github-markdown-dark table tr th :first-child, .github-markdown-dark table tr td :first-child {
+  margin-top: 0;
+}
+
+.github-markdown-dark table tr th :last-child, .github-markdown-dark table tr td :last-child {
+  margin-bottom: 0;
+}
+
+.github-markdown-dark img {
+  max-width: 100%;
+}
+
+.github-markdown-dark span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.github-markdown-dark span.frame > span {
+  border: 1px solid #222222;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+
+.github-markdown-dark span.frame span img {
+  display: block;
+  float: left;
+}
+
+.github-markdown-dark span.frame span span {
+  clear: both;
+  color: #CCCCCC;
+  display: block;
+  padding: 5px 0 0;
+}
+
+.github-markdown-dark span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.github-markdown-dark span.align-center > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+
+.github-markdown-dark span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.github-markdown-dark span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.github-markdown-dark span.align-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+
+.github-markdown-dark span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.github-markdown-dark span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+
+.github-markdown-dark span.float-left span {
+  margin: 13px 0 0;
+}
+
+.github-markdown-dark span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+
+.github-markdown-dark span.float-right > span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+
+.github-markdown-dark code, .github-markdown-dark tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #151515;
+  background-color: #070707;
+  border-radius: 3px;
+}
+
+.github-markdown-dark pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+.github-markdown-dark .highlight pre {
+  background-color: #070707;
+  border: 1px solid #333333;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.github-markdown-dark pre {
+  background-color: #070707;
+  border: 1px solid #333333;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.github-markdown-dark pre code, .github-markdown-dark pre tt {
+  background-color: transparent;
+  border: none;
+}

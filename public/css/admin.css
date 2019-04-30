@@ -1,0 +1,25 @@
+#back,.backimg{
+	vertical-align:middie;
+	cursor:pointer;
+}
+#nav{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+	vertical-align:middie;
+}
+#nav>li{
+	border:1px solid gray;
+	display:inline-block;
+	margin:0px;
+	padding:0.125em 0.25em;
+	cursor:default;
+}
+.nav-select{
+	background-color:#9FF;
+	color:#000;
+}
+.nav-unselect{
+	color:gray;
+}
