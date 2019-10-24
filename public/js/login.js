@@ -100,24 +100,27 @@ function loginFunc()
 			hash:hash,
 			time:t
 		};
-		if(gToken!==false){
-			data['gToken']=gToken;
-		}
-		$.ajax({
-			url:baseUrl+'app/api/user/login.php',
-			method:'POST',
-			data:data,
-			success:function(data){
-				sessionStorage.setItem('pwd',hash2);
-				sessionStorage.setItem('pSalt',JSON.stringify(privateSalt));
-				window.location.replace(location.href);
-			},
-			error:function(xhr){
-				$('#log').text('登入失敗，請重試');
-			},
-			complete:function(){
-				$('#login').attr('disabled',false).val('登入');
-			}
+		grecaptcha.execute(
+			gSiteKey,
+			{action: 'login'}
+		).then(function(token){
+			data['gToken']=token;
+			$.ajax({
+				url:baseUrl+'app/api/user/login.php',
+				method:'POST',
+				data:data,
+				success:function(data){
+					sessionStorage.setItem('pwd',hash2);
+					sessionStorage.setItem('pSalt',JSON.stringify(privateSalt));
+					window.location.replace(location.href);
+				},
+				error:function(xhr){
+					$('#log').text('登入失敗，請重試');
+				},
+				complete:function(){
+					$('#login').attr('disabled',false).val('登入');
+				}
+			});
 		});
 	}
 }

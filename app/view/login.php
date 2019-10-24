@@ -57,15 +57,7 @@
     <script>
         var baseUrl='<?php echo env::baseUrl;?>';
         var salt='<?php echo $salt;?>';
-        var gToken=false;
-        grecaptcha.ready(function() {
-            grecaptcha.execute(
-                '<?php echo env::googleRecaptcha['public'];?>',
-                {action: 'login'}
-            ).then(function(token){
-                gToken=token;
-            });
-        });
+        var gSiteKey='<?php echo env::googleRecaptcha['public'];?>';
     </script>
     <div id='box'>
         <div id='nav'>
